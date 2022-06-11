@@ -11,6 +11,8 @@
 		090954312854BB0A006CE270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090954302854BB0A006CE270 /* ContentView.swift */; };
 		090954332854BB0B006CE270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090954322854BB0B006CE270 /* Assets.xcassets */; };
 		090954362854BB0B006CE270 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090954352854BB0B006CE270 /* Preview Assets.xcassets */; };
+		090954402854BBE0006CE270 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909543F2854BBE0006CE270 /* MovieViewModel.swift */; };
+		090954422854BC69006CE270 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090954412854BC69006CE270 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		090954302854BB0A006CE270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		090954322854BB0B006CE270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		090954352854BB0B006CE270 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0909543F2854BBE0006CE270 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		090954412854BC69006CE270 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		0909542D2854BB0A006CE270 /* moviedb-api-demo */ = {
 			isa = PBXGroup;
 			children = (
+				0909543C2854BB79006CE270 /* ViewModel */,
+				0909543D2854BB82006CE270 /* Model */,
 				0909542E2854BB0A006CE270 /* moviedb_api_demoApp.swift */,
 				090954302854BB0A006CE270 /* ContentView.swift */,
 				090954322854BB0B006CE270 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				090954352854BB0B006CE270 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0909543C2854BB79006CE270 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0909543F2854BBE0006CE270 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0909543D2854BB82006CE270 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				090954412854BC69006CE270 /* Movie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			files = (
 				090954312854BB0A006CE270 /* ContentView.swift in Sources */,
 				0909542F2854BB0A006CE270 /* moviedb_api_demoApp.swift in Sources */,
+				090954422854BC69006CE270 /* Movie.swift in Sources */,
+				090954402854BBE0006CE270 /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

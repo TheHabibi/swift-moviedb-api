@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel = ViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            if let movies = viewModel.movies{
+                List(movies, id: \.self) { movie in
+                    if let title = movie.original_title{
+                        Text(title)
+                    }
+                }
+                .navigationBarTitle("Top Movies")
+            }
+        }
+        .onAppear(){
+            viewModel.load()
+        }
     }
 }
 
@@ -19,3 +33,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
